@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dabshboard - Personal Assistant</title>
+
+    <link rel="stylesheet" href="includes/style/main.css">
+    <link rel="stylesheet" href="/plugins/css/theme-basic.css" />
+    <link rel="stylesheet" href="/plugins/css/theme-glass.css" />
+
+    <script src="/plugins/bundle.js" defer></script>
+    <script src="/plugins/calendarsettings.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="includes/js/metro-scroll.js" defer></script>
+    <script src="includes/js/widgets/dateandtime.js" defer></script>
+    <script src="includes/js/widgets/motivationalquotes.js" defer></script>
+    <script src="includes/js/soft-scroll.js" defer></script>
+    <script src="includes/js/popup.js" defer></script>
+    <script src="includes/js/theme-picker.js" defer></script>
+    <script src="includes/js/widgets/news.js" defer></script>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="sidebar">
+            <div class="clock text-center">
+                <div id="time">-</div>
+                <div id="day">-</div>
+                <div id="date">-</div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <a href="#start">
+                        <li>My Dashboard</li>
+                    </a>
+                    <a href="#goals">
+                        <li>Goals</li>
+                    </a>
+                    <a href="#tasks">
+                        <li>Tasks</li>
+                    </a>
+                    <a href="#notes">
+                        <li>Notes</li>
+                    </a>
+                    <a href="#calendar">
+                        <li>Calendar</li>
+                    </a>
+                    <a href="#calculator">
+                        <li>Calculator</li>
+                    </a>
+                    <a href="#settings">
+                        <li>Settings</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="credit">
+                Made by <div class="link">@younesvm</div>
+                <div class="link">@alpaynamazi</div>
+            </div>
+        </div>
+        <div class="wrapper" id="start">
+            <div id="motivation-bar">Loading ...</div>
+            <div class="container">
+                <div id="start" class="dashboard">
+                    <h1>Dashboard</h1>
+                    <div class="mini-tasks">
+                        <h2>
+                            <a href="#tasks">
+                                Tasks<span class="goto">>></span>
+                            </a>
+                        </h2>
+                        <div class="mini-tasks-list">
+                            <div class="mini-tasks-block">
+                                <div class="mtb-title">Task list #1
+
+                                </div>
+                                <div class="mtb-perce">%98</div>
+                                <div class="percentage">
+                                    <div class="percentage-bar" perc="98"></div>
+                                </div>
+                            </div>
+                            <div class="mini-tasks-block">
+                                <div class="mtb-title">Task list #1</div>
+                                <div class="mtb-perce">%69</div>
+                                <div class="percentage">
+                                    <div class="percentage-bar" perc="69"></div>
+                                </div>
+                            </div>
+                            <div class="mini-tasks-block">
+                                <div class="mtb-title">Task list #2</div>
+                                <div class="mtb-perce">%0</div>
+                                <div class="percentage">
+                                    <div class="percentage-bar" perc="0"></div>
+                                </div>
+                            </div>
+                            <div class="mini-tasks-block">
+                                <div class="mtb-title">Task list #1</div>
+                                <div class="mtb-perce">%5</div>
+                                <div class="percentage">
+                                    <div class="percentage-bar" perc="5"></div>
+                                </div>
+                            </div>
+                            <div class="mini-tasks-block">
+                                <div class="mtb-title">Task list #1</div>
+                                <div class="mtb-perce">%100</div>
+                                <div class="percentage">
+                                    <div class="percentage-bar" perc="100"></div>
+                                </div>
+                            </div>
+                            <div class="mini-tasks-block">
+                                <div class="mtb-title">Task list #1</div>
+                                <div class="mtb-perce">%17</div>
+                                <div class="percentage">
+                                    <div class="percentage-bar" perc="17"></div>
+                                </div>
+                            </div>
+                            <div class="mini-tasks-block">
+                                <div class="mtb-title">Task list #1</div>
+                                <div class="mtb-perce">%12</div>
+                                <div class="percentage">
+                                    <div class="percentage-bar" perc="12"></div>
+                                </div>
+                            </div>
+                            <div class="mini-tasks-block">
+                                <div class="mtb-title">Task list #1</div>
+                                <div class="mtb-perce">%37</div>
+                                <div class="percentage">
+                                    <div class="percentage-bar" perc="37"></div>
+                                </div>
+                            </div>
+                            <div class="mini-tasks-block">
+                                <div class="mtb-title">Task list #1</div>
+                                <div class="mtb-perce">%52</div>
+                                <div class="percentage">
+                                    <div class="percentage-bar" perc="52"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mini-notes">
+                        <h2>
+                            <a href="#notes">
+                                Notes<span class="goto">>></span>
+                            </a>
+                        </h2>
+                        <div class="mini-notes-list">
+                            <div class="mini-notes-block">
+                                <div class="mnb-title">Task list #1</div>
+                                <p class="mini-notes-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus maiores unde,
+                                    nobis mollitia voluptas eaque nam et, rerum, libero accusamus dicta alias neque
+                                    omnis reiciendis! Doloremque sed nihil in atque?
+                                </p>
+                            </div>
+                            <div class="mini-notes-block">
+                                <div class="mnb-title">Task list #1</div>
+                                <p class="mini-notes-description">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab voluptatum a at minima
+                                    suscipit aut adipisci, et dolore eos doloribus omnis est officia dicta tempore
+                                    cumque neque quibusdam illo voluptates!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mini-prices">test</div>
+                    <div class="articles">
+                        <h3>Useful Articles</h3>
+                        <div class="article-list">
+                            <div class="article">
+                                <h3>Donald Trump dies at age 84</h3>
+                                <p>44th President of the united states died at 84 few minutes ago. Doctors announced
+                                    his death was natural.</p>
+                                <a href="" class="link-to-article">
+                                    Read More ...
+                                </a>
+                            </div>
+                            <div class="article">
+                                <h3></h3>
+                                <h4></h4>
+                                <div class="link-to-article">
+                                    Read More ...
+                                </div>
+                            </div>
+                            <div class="article">
+                                <h3></h3>
+                                <h4></h4>
+                                <div class="link-to-article">
+                                    Read More ...
+                                </div>
+                            </div>
+                            <div class="article">
+                                <h3></h3>
+                                <h4></h4>
+                                <div class="link-to-article">
+                                    Read More ...
+                                </div>
+                            </div>
+                            <div class="article">
+                                <h3></h3>
+                                <h4></h4>
+                                <div class="link-to-article">
+                                    Read More ...
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="goals" class="block">
+                    <div class="block-header">
+                        <h1>Goals</h1>
+                        <span class="add-list" onclick="popup('create-new-goal')">+ Create a new goal</span>
+                    </div>
+                    <div class="goals-block margin-10">
+                        <div class="block-header">
+                            <h2>Goal #1</h2>
+                            <span class="add-list" onclick="popup('create-new-objective')">+ Create a new
+                                objective</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="progress-bar-fill" style="width: 37%;">37%</span>
+                        </div>
+                        <ul class="padding-10 nostyle">
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="goals-block margin-10">
+                        <div class="block-header">
+                            <h2>Goal #2</h2>
+                            <span class="add-list" onclick="popup('create-new-objective')">+ Create a new
+                                objective</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="progress-bar-fill" style="width: 70%;">70%</span>
+                        </div>
+                        <ul class="padding-10 nostyle">
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="goals-block margin-10">
+                        <div class="block-header">
+                            <h2>Goal #3</h2>
+                            <span class="add-list" onclick="popup('create-new-objective')">+ Create a new
+                                objective</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span class="progress-bar-fill" style="width: 90%;">90%</span>
+                        </div>
+                        <ul class="padding-10 nostyle">
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="tasks" class="block">
+                    <div class="block-header">
+                        <h1>Tasks</h1>
+                        <span class="add-list" onclick="popup('create-new-task')">+ Create a new checklist</span>
+                    </div>
+                    <div class="task-block">
+                        <h3>Checklist #1</h3>
+                        <ul class="padding-10">
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                        </ul>
+                        <div class="task-add">+ Add new task</div>
+                    </div>
+                    <div class="task-block">
+                        <h3>Checklist #2</h3>
+                        <ul class="padding-10">
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                        </ul>
+                        <div class="task-add">+ Add new task</div>
+                    </div>
+
+                </div>
+                <div id="notes" class="block">
+                    <div class="block-header">
+                        <h1>Notes</h1>
+                        <span class="add-list" onclick="popup('create-new-note')">+ Create a new note</span>
+                    </div>
+                    <div class="note-block">
+                        <h3>Note #1</h3>
+                        <p class="padding-10">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nulla veritatis praesentium
+                            inventore, quaerat quae libero, fuga facere iure necessitatibus blanditiis ea perspiciatis
+                            minus sed vel reprehenderit tenetur quia dolorem.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae corporis ex distinctio
+                            necessitatibus quia. Ipsa aliquid esse ratione quis fugiat nulla, saepe quos ipsam
+                            cupiditate similique vitae inventore, repellendus sed?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti unde labore praesentium
+                            harum repudiandae velit nostrum possimus, sint voluptates veniam sequi adipisci earum, quam
+                            excepturi voluptas officiis amet fugiat reiciendis!
+                        </p>
+                    </div>
+                    <div class="note-block">
+                        <h3>Note #2</h3>
+                        <p class="padding-10">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti unde labore praesentium
+                            harum repudiandae velit nostrum possimus, sint voluptates veniam sequi adipisci earum, quam
+                            excepturi voluptas officiis amet fugiat reiciendis!
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti unde labore praesentium
+                            harum repudiandae velit nostrum possimus, sint voluptates veniam sequi adipisci earum, quam
+                            excepturi voluptas officiis amet fugiat reiciendis!
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti unde labore praesentium
+                            harum repudiandae velit nostrum possimus, sint voluptates veniam sequi adipisci earum, quam
+                            excepturi voluptas officiis amet fugiat reiciendis!
+                        </p>
+                    </div>
+                </div>
+                <div id="calendar" class="block">
+                    <div class="block-header">
+                        <h1>Calendar</h1>
+                    </div>
+                    <div class="calendar-block">
+                        <div id="color-calendar"></div>
+                    </div>
+                </div>
+                <div id="calculator" class="block">
+                    <div class="block-header">
+                        <h1>Calculator</h1>
+                    </div>
+                </div>
+                <div id="settings" class="block">
+                    <div class="block-header">
+                        <h1>Settings</h1>
+                    </div>
+                    <div class="settings-block">
+                        <div class="settings-section">
+                            <h2>Theme</h2>
+                            <div class="settings-child">
+                                <label for="color1">
+                                    <h3>Color #1:</h3>
+                                </label>
+                                <input type="color" value="#323232" id="color1">
+                            </div>
+                            <div class="settings-child">
+                                <label for="color2">
+                                    <h3>Color #2:</h3>
+                                </label>
+                                <input type="color" value="#e5e5e5" id="color2">
+                            </div>
+                            <div class="settings-child">
+                                <label for="color3">
+                                    <h3>Color #3:</h3>
+                                </label>
+                                <input type="color" value="#b8b8b8" id="color3">
+                            </div>
+
+                        </div>
+                        <div class="settings-section">
+                            <h2>Theme</h2>
+                            <div class="settings-child">
+                                <label for="color1">
+                                    <h3>Color #1:</h3>
+                                </label>
+                                <input type="color" value="#323232" id="color1">
+                            </div>
+                            <div class="settings-child">
+                                <label for="color2">
+                                    <h3>Color #2:</h3>
+                                </label>
+                                <input type="color" value="#e5e5e5" id="color2">
+                            </div>
+                            <div class="settings-child">
+                                <label for="color3">
+                                    <h3>Color #3:</h3>
+                                </label>
+                                <input type="color" value="#b8b8b8" id="color3">
+                            </div>
+
+                        </div>
+                        <div class="settings-section">
+                            <h2>Theme</h2>
+                            <div class="settings-child">
+                                <label for="color1">
+                                    <h3>Color #1:</h3>
+                                </label>
+                                <input type="color" value="#323232" id="color1">
+                            </div>
+                            <div class="settings-child">
+                                <label for="color2">
+                                    <h3>Color #2:</h3>
+                                </label>
+                                <input type="color" value="#e5e5e5" id="color2">
+                            </div>
+                            <div class="settings-child">
+                                <label for="color3">
+                                    <h3>Color #3:</h3>
+                                </label>
+                                <input type="color" value="#b8b8b8" id="color3">
+                            </div>
+
+                        </div>
+                        <div class="settings-section">
+                            <h2>Theme</h2>
+                            <div class="settings-child">
+                                <label for="color1">
+                                    <h3>Color #1:</h3>
+                                </label>
+                                <input type="color" value="#323232" id="color1">
+                            </div>
+                            <div class="settings-child">
+                                <label for="color2">
+                                    <h3>Color #2:</h3>
+                                </label>
+                                <input type="color" value="#e5e5e5" id="color2">
+                            </div>
+                            <div class="settings-child">
+                                <label for="color3">
+                                    <h3>Color #3:</h3>
+                                </label>
+                                <input type="color" value="#b8b8b8" id="color3">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="popup" id="create-new-goal">
+
+        <div class="darkoverlay" onclick="popupremove('create-new-goal')"></div>
+        <div class="dialog">
+            EVERYTHING THAT'S SUPPOSED TO BE IN THAT POPUP GOES HERE. -> this is where you put
+            everything
+        </div>
+
+    </div>
+    <div class="popup" id="create-new-task">
+
+        <div class="darkoverlay" onclick="popupremove('create-new-task')"></div>
+        <div class="dialog">
+            EVERYTHING THAT'S SUPPOSED TO BE IN THAT POPUP GOES HERE. -> this is where you put
+            everything
+        </div>
+
+    </div>
+    <div class="popup" id="create-new-note">
+
+        <div class="darkoverlay" onclick="popupremove('create-new-note')"></div>
+        <div class="dialog">
+            EVERYTHING THAT'S SUPPOSED TO BE IN THAT POPUP GOES HERE. -> this is where you put
+            everything
+        </div>
+
+    </div>
+    <div class="popup" id="create-new-objective">
+
+        <div class="darkoverlay" onclick="popupremove('create-new-objective')"></div>
+        <div class="dialog">
+            EVERYTHING THAT'S SUPPOSED TO BE IN THAT POPUP GOES HERE. -> this is where you put
+            everything
+        </div>
+
+    </div>
+</body>
+
+</html>
