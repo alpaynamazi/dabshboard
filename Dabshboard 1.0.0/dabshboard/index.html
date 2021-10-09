@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dabshboard - Personal Assistant</title>
+    <link rel="stylesheet" href="includes/style/main.css">
+    <script src="includes/js/dateandtime.js" defer></script>
+    <script src="includes/js/motivationalquotes.js" defer></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="clock text-center">
+                <div id="time">-</div>
+                <div id="day">-</div>
+                <div id="date">-</div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <a href="#start">
+                        <li>My Dashboard</li>
+                    </a>
+                    <a href="#calculator">
+                        <li>Calculator</li>
+                    </a>
+                    <a href="#settings">
+                        <li>Settings</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="credit">
+                Made by <div class="link">@younesvm</div>
+                <div class="link">@alpaynamazi</div>
+            </div>
+        </div>
+        <div class="container" id="start">
+            <div id="motivation-bar" class="fixed">Loading</div>
+            <div id="goals" class="block"></div>
+            <div id="tasks" class="block"></div>
+            <div id="notes" class="block"></div>
+            <div id="articles" class="block"></div>
+            <div id="calculator" class="block"></div>
+            <div id="settings" class="block"></div>
+        </div>
+    </div>
+</body>
+
+</html>
