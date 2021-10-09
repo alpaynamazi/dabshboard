@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dabshboard - Personal Assistant</title>
+    <link rel="stylesheet" href="includes/style/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="includes/js/widgets/dateandtime.js" defer></script>
+    <script src="includes/js/widgets/motivationalquotes.js" defer></script>
+    <script src="includes/js/soft-scroll.js" defer></script>
+    <script src="includes/js/popup.js" defer></script>
+</head>
+
+<body id="blur">
+
+    <div class="main">
+
+        <div class="sidebar">
+            <div class="clock text-center">
+                <div id="time">-</div>
+                <div id="day">-</div>
+                <div id="date">-</div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <a href="#start">
+                        <li>My Dashboard</li>
+                    </a>
+                    <a href="#goals">
+                        <li>Goals</li>
+                    </a>
+                    <a href="#tasks">
+                        <li>Tasks</li>
+                    </a>
+                    <a href="#notes">
+                        <li>Notes</li>
+                    </a>
+                    <a href="#calculator">
+                        <li>Calculator</li>
+                    </a>
+                    <a href="#settings">
+                        <li>Settings</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="credit">
+                Made by <div class="link">@younesvm</div>
+                <div class="link">@alpaynamazi</div>
+            </div>
+        </div>
+        <div class="wrapper" id="start">
+            <div id="motivation-bar">Loading ...</div>
+            <div class="container">
+
+                <div id="goals" class="block">
+                    <div id="tasks" class="block">
+                        <div class="block-header">
+                            <h1>Goals</h1>
+                            <span class="add-checklist" onclick="popup('create-new-goal')">+ Create a new goal</span>
+                        </div>
+                        <div class="goals-block">
+                            <div class="progress-bar">
+                                <span class="progress-bar-fill" style="width: 70%;">70%</span>
+                            </div>
+                        </div>
+                        <ul class="padding-10 nostyle">
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </div>
+                <div id="tasks" class="block">
+                    <div class="block-header">
+                        <h1>Tasks</h1>
+                        <span class="add-checklist" onclick="popup('create-new-task')">+ Create a new checklist</span>
+                    </div>
+                    <div class="task-block">
+                        <h3>Checklist #1</h3>
+                        <ul class="padding-10">
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                        </ul>
+                        <div class="task-add">+ Add new task</div>
+                    </div>
+                    <div class="task-block">
+                        <h3>Checklist #2</h3>
+                        <ul class="padding-10">
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label>Check this</label>
+                            </li>
+                        </ul>
+                        <div class="task-add">+ Add new task</div>
+                    </div>
+
+                </div>
+                <div id="notes" class="block">testsetset</div>
+                <div id="articles" class="block"></div>
+                <div id="calculator" class="block"></div>
+                <div id="settings" class="block"></div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="create-new-goal">
+
+        <div class="darkoverlay" onclick="popupremove('create-new-goal')"></div>
+        <div class="dialog">
+            EVERYTHING THAT'S SUPPOSED TO BE IN THAT POPUP GOES HERE. -> this is where you put
+            everything
+        </div>
+
+    </div>
+    <div class="popup" id="create-new-task">
+
+        <div class="darkoverlay" onclick="popupremove('create-new-task')"></div>
+        <div class="dialog">
+            EVERYTHING THAT'S SUPPOSED TO BE IN THAT POPUP GOES HERE. -> this is where you put
+            everything
+        </div>
+
+    </div>
+</body>
+
+</html>
